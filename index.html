@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TT58202</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>TT58202</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Microcontroller</th>
+            <th>Lint+</th>
+            <th>AxStyle</th>
+            <th>AxAnalysis</th>
+            <th>AllComp</th>
+            <th>FuncSafe</th>
+            <th>TT1 int.</th>
+            <th>TT2 int.</th>
+            <th>TT1 armclang</th>
+            <th>TT2 armclang</th>
+            <th>TT1 gcc</th>
+            <th>TT2 gcc</th>
+            <th>TT1 armcc</th>
+            <th>TT2 armcc</th>
+            <th>TT1 Baud</th>
+            <th>TT2 Baud</th>
+            <th>TT1 ProdMsg</th>
+            <th>TT2 ProdMsg</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>STM32G0</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>STM32G4</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>STM32H7</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>RA2</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>RA4</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>SH30</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>GD32E230</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>GD32E303</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>GD32E503</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>GD32H7</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>MKV5</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>MKE14</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>PSoC4</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    // Function to generate a random value (0, 1, or 2)
+    function getRandomValue() {
+        return Math.floor(Math.random() * 3);
+    }
+
+    // Loop through each cell in the table body and insert random values
+    document.querySelectorAll('tbody tr').forEach(function(row) {
+        // Exclude the first cell (microcontroller name)
+        Array.from(row.cells).slice(1).forEach(function(cell) {
+            cell.textContent = getRandomValue();
+        });
+    });
+</script>
+
+</body>
+</html>
